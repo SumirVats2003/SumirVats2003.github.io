@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Roboto+Mono&display=swap');
+
+html {
+	scroll-behavior: smooth;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--uifont: 'Kdam Thmor Pro', sans-serif;
+	--devfont: 'Roboto Mono', monospace;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+h1 {
+	/* color: rgba(84,58,183,1); */
+	margin: 2rem;
+}
+
+.navbar {
+	margin: 0;
+	font-family: var(--uifont);
+}
+
+.navbar ul {
+	display: flex;
+	margin: 0;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.navbar ul li {
+	margin: 1.8rem;
+	font-size: 20px;
+	text-decoration: none;
+	list-style-type: none;
+}
+
+a:hover {
+	color: rgb(232, 239, 241);
+}
+
+.intro img {
+	height: 60vh;
+	margin: 2rem;
+	box-shadow: 0px 0px 15px 15px rgb(255, 255, 255);
+}
+
+.intro {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	text-align: center;
+}
+
+.intro h1 {
+	color: white;
+	font-family: var(--uifont);
+	font-size: 1.5rem;
+	margin: 0.5rem;
+}
+
+.intro strong {
+	font-family: var(--devfont);
+	font-size: 3.5rem;
+}
+
+.intro p{
+	color: white;
+	margin: 0.5rem;
+	font-size: 1.5rem;
+	font-family: var(--uifont);
+}
+
+.about {
+	text-align:center;
+	margin: 4rem;
+}
+
+.about h1 {
+	font-family: var(--devfont);
+	font-weight: bold;
+}
+
+.about .abtme {
+	font-family: var(--uifont);
+}
+
+.projects {
+	text-align: center;
+	margin: 4rem;
+}
+
+.projects h1 {
+	font-family: var(--devfont);
+	font-weight: bold;
+}
+
+.prj {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.prj .card {
+	width: 25vw;
+	margin: 2rem;
+	box-shadow: 0px 0px 5px 5px grey;
+	height: 60vh;
+}
+
+.prj .card .head {
+	font-family: var(--devfont);
+	font-weight: bold;
+	font-size: 25px;
+}
+
+.prj .card .cardcnt {
+	font-family: var(--uifont);
+	font-size: 15px;
+	margin: 1em;
+}
+
+.card img {
+	height: 30%;
+	width: 100%;
+}
+
+.services {
+	text-align: center;
+}
+
+.services h1 {
+	font-family: var(--devfont);
+	font-weight: bold;
+}
+
+.svc {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.svc .circle img {
+	width: 15vw;
+	height: 15vw;
+	border-radius: 300px;
+}
+
+.circle {
+	margin: 1.5rem;
+}
+
+.service h2{
+	font-family: var(--uifont);
+}
+
+.contact {
+	text-align: center;
+	width: 100vw;
+}
+
+.contact h1 {
+	margin: 2rem;
+	font-family: var(--devfont);
+	font-weight: bold;
+}
+
+.contact form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 60vw;
+	margin: auto;
+}
+
+.contact form input {
+	width: 60%;
+	margin: 2px;
+	font-size: 18px;
+	font-family: var(--uifont);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 2px;
+}
+
+.contact form textarea {
+	resize: none;
+	width: 100%;
+	height: 100%;
+	padding: 2px;
+	font-size: 18px;
+	font-family: var(--uifont);
+}
+
+#form-submit {
+	width: 20%;
+	padding: 0.5rem;
+	background-color: #2196F3;
+	border: 0;
+	border-radius: 3px;
+	margin: 2rem;
+	cursor: pointer;
+	color: white;
+}
+
+.footer {
+	/* padding: 2rem; */
+	text-align: center;
+	color: white;
+	background-color: rgba(0,172,193,1);
+}
+
+.footer a {
+	margin: 2rem;
+}
+
+.footer a i {
+	font-size: 40px;
+}
+
+.footer .social {
+	margin: 0;
+}
+
+.social p {
+	padding: 2rem;
+	color: white;
+}
+
+#myBtn {
+	display: none; /* Hidden by default */
+	position: fixed; /* Fixed/sticky position */
+	bottom: 20px; /* Place the button at the bottom of the page */
+	right: 30px; /* Place the button 30px from the right */
+	z-index: 99; /* Make sure it does not overlap */
+	border: none; /* Remove borders */
+	outline: none; /* Remove outline */
+	background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%); /* Set a background color */
+	color: white; /* Text color */
+	cursor: pointer; /* Add a mouse pointer on hover */
+	padding: 15px; /* Some padding */
+	border-radius: 10px; /* Rounded corners */
+	font-size: 18px; /* Increase font size */
+  }
+  
+#myBtn:hover {
+	background-color: #555; /* Add a dark-grey background on hover */
+}
+
+.container {
+	width: 100%;
+	background-color: #ddd;
+}
+
+.skills {
+	font-family: var(--devfont);
+	font-weight: bold;
+	text-align: right;
+	margin-bottom: 1.5rem;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: white;
+}
+
+.skill {
+	font-family: var(--devfont);
+	font-weight: bold;
+	text-align: right;
+	margin-bottom: 1.5rem;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: white;
+	background-color: #2196F3;
+}
+
+.html {
+	width: 90%;
+}
+
+.css {
+	width: 80%;
+}
+
+.js {
+	width: 30%;
+}
+
+.cpp {
+	width: 60%;
+}
+
+.dart {
+	width: 75%;
+}
+
+.py {
+	width: 50%;
+}
+
+.git {
+	width: 60%;
+}
+
+.card a {
+	color: rgba(0,172,193,1);
+}
+
+.card a:hover {
+	color: rgb(0, 139, 157);
+}
