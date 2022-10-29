@@ -59,6 +59,7 @@ a:hover {
 	align-items: center;
 	justify-content: space-around;
 	text-align: center;
+	/* flex-direction: column; */
 }
 
 .intro h1 {
@@ -78,6 +79,23 @@ a:hover {
 	margin: 0.5rem;
 	font-size: 1.5rem;
 	font-family: var(--uifont);
+}
+
+.btn {
+	color: #2196F3;
+	background-color: white;
+	border: 3px solid rgba(84,58,183,1);
+	padding: 1rem;
+	font-size: 1.5rem;
+	border-radius: 2rem;
+	cursor: pointer;
+	transition: 0.2s ease;
+}
+
+.btn:hover {
+	background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
+	color: white;
+	border: 3px solid white;
 }
 
 .about {
@@ -130,7 +148,7 @@ a:hover {
 }
 
 .card img {
-	height: 30%;
+	height: 35%;
 	width: 100%;
 }
 
@@ -163,7 +181,7 @@ a:hover {
 	font-family: var(--uifont);
 }
 
-.contact {
+/* .contact {
 	text-align: center;
 	width: 100vw;
 }
@@ -201,9 +219,9 @@ a:hover {
 	padding: 2px;
 	font-size: 18px;
 	font-family: var(--uifont);
-}
+} */
 
-#form-submit {
+/* #form-submit {
 	width: 20%;
 	padding: 0.5rem;
 	background-color: #2196F3;
@@ -212,7 +230,7 @@ a:hover {
 	margin: 2rem;
 	cursor: pointer;
 	color: white;
-}
+} */
 
 .footer {
 	/* padding: 2rem; */
@@ -318,4 +336,34 @@ a:hover {
 
 .card a:hover {
 	color: rgb(0, 139, 157);
+}
+
+@media only screen and (max-width: 500px){
+	h1 {
+		font-size: 40px;
+	}
+	.intro img {
+		width: 80vw;
+		height: 80vw;
+	}
+	.intro {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.prj {
+		display: flex;
+		flex-direction: column;
+	}
+	.prj .card {
+		width: 80vw;
+		height: 65vh;
+	}
+	.svc {
+		display: flex;
+		flex-direction: column;
+	}
+	.footer a {
+		margin: 1rem;
+	}
 }
