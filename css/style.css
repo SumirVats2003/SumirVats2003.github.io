@@ -79,22 +79,25 @@ a:hover {
 	margin: 0.5rem;
 	font-size: 1.5rem;
 	font-family: var(--uifont);
+	margin-bottom: 2rem;
 }
 
 .btn {
-	color: #2196F3;
-	background-color: white;
-	border: 3px solid rgba(84,58,183,1);
+	color: #fff;
+	background-color: transparent;
+	border: 3px solid white;
 	padding: 1rem;
-	font-size: 1.5rem;
+	font-size: 1.3rem;
 	border-radius: 2rem;
 	cursor: pointer;
 	transition: 0.2s ease;
+	font-family: var(--uifont);
+	margin: 1rem;
 }
 
 .btn:hover {
-	background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
-	color: white;
+	background: white;
+	color: #2196F3;
 	border: 3px solid white;
 }
 
@@ -350,7 +353,10 @@ a:hover {
 		display: flex;
 		flex-direction: column;
 	}
-	
+	.navbar ul {
+		display: flex;
+		flex-direction: column;
+	}
 	.prj {
 		display: flex;
 		flex-direction: column;
