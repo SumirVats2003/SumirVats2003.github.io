@@ -421,8 +421,11 @@ a:hover {
 		display: flex;
 		flex-direction: column;
 	}
+	.card-img {
+		width: 60vw;
+	}
 	.card-img img{
-		width: 100%;
+		width: 60vw;
 	}
 }
 
