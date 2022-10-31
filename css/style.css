@@ -353,6 +353,39 @@ a:hover {
 	color: rgb(0, 139, 157);
 }
 
+
+.edu {
+	width: 60vw;
+	margin: 1rem auto;
+	border: 1px solid black;
+	padding: 1rem;
+	border-radius: 0.5rem;
+}
+
+.info {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	justify-content: center;
+	margin: 1rem;
+}
+
+.card-img {
+	width: 35%;
+}
+
+.qual {
+	text-align: left;
+}
+
+.qual table tr td {
+	padding: 0.5rem;
+}
+
+.card-img img{
+	width: 60%;
+}
+
 @media only screen and (max-width: 500px){
 	h1 {
 		font-size: 40px;
@@ -383,6 +416,13 @@ a:hover {
 	}
 	.footer a {
 		margin: 1rem;
+	}
+	.info {
+		display: flex;
+		flex-direction: column;
+	}
+	.card-img img{
+		width: 100%;
 	}
 }
 
