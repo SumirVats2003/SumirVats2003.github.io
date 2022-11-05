@@ -44,6 +44,19 @@ h1 {
 	list-style-type: none;
 }
 
+.ham {
+	padding: 2rem;
+	text-align: right;
+	display: none;
+	cursor: pointer;
+	font-size: 2px;
+	color: white;
+}
+
+.ham svg {
+	width: 2px;
+}
+
 a:hover {
 	color: rgb(232, 239, 241);
 }
@@ -426,6 +439,16 @@ a:hover {
 	}
 	.card-img img{
 		width: 60vw;
+	}
+	.navbar {
+		display: none;
+	}
+	.ham {
+		display: block;
+		font-size: 20px;
+	}
+	.edu {
+		width: 80vw;
 	}
 }
 
