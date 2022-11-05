@@ -373,6 +373,7 @@ a:hover {
 	border: 1px solid black;
 	padding: 1rem;
 	border-radius: 0.5rem;
+	box-shadow: 0 0 20px #acacac;;
 }
 
 .info {
@@ -449,6 +450,13 @@ a:hover {
 	}
 	.edu {
 		width: 80vw;
+		margin:0;
+	}
+	.abtme {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
 	}
 }
 
